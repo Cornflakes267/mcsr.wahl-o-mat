@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCSR Wahl-O-Mat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1 id="main-title">
+            MCSR <a href="https://www.wahl-o-mat.de/" target="_blank">Wahl-O-Mat</a>
+            <span class="trademark-circle custom-trademark"></span>
+        </h1>
+        <p class="description">
+            15 speedrunners have answered the statements. Now it's your turn: compare your points of view with the speedrunners' answers<br><br>
+            This is inspired by the German <a href="https://www.wahl-o-mat.de/" target="_blank">Wahl-O-Mat</a> that determines which parties represent your political views the best based on statements you and the parties have answered.<br><br>
+            Note that choosing "Neutral" and "Skip Statement" has two different effects:<br>
+            "Neutral" means that you both consider pro and con arguments as valid and can't decide for one side. This statement will still be considered in your results.<br>
+            "Skip Statement" means that you don't have an opinion about the statement. This statement will not be considered in your results.<br><br>
+            At the end, you will see all the questions you have answered again.<br>
+            If one topic is especially important to you, you can check the box to weigh it twice as important as other statements.
+        </p>
+        <button id="start-button">Start</button>
+        
+        <div id="credit">
+            <h3>Made by Cornflakes267</h3>
+            <p>
+                <a href="https://www.youtube.com/@Cornflakes267" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="red">
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                    </svg>
+                    YouTube
+                </a>
+                <span style="margin: 0 15px;"> </span> <!-- Add space instead of vertical bar -->
+                <a href="https://www.twitch.tv/cornflakes267" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#6441a5">
+                        <path d="M2.149 0l-1.612 4.119v16.836h5.731v3.045h3.224l3.045-3.045h4.657l6.269-6.269v-14.686h-21.314zm19.164 13.612l-3.582 3.582h-5.731l-3.045 3.045v-3.045h-4.836v-15.045h17.194v11.463zm-3.582-7.731v6.631h-2.149v-6.631h2.149zm-5.731 0v6.631h-2.149v-6.631h2.149z"/>
+                    </svg>
+                    Twitch
+                </a>
+            </p>
+        </div>
+        <div id="contributors-link">
+            <a href="contributors.html">Contributors ❤️</a>
+        </div>
+    </div>
+    <div id="question-screen" style="display: none;">
+        <div id="logo-container">
+            <h1 id="question-logo">
+                MCSR <a href="https://www.wahl-o-mat.de/" target="_blank">Wahl-O-Mat</a>
+                <span class="trademark-circle custom-trademark"></span>
+            </h1>
+        </div>
+        <h2 id="question-text"></h2>
+        <div id="answer-buttons"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

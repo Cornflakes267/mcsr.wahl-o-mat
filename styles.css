@@ -1,0 +1,413 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+}
+
+p {
+    color: #e0e0e0;
+    text-align: center;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: #007ACC;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 10px auto;
+    display: block;
+    width: 80%;
+}
+
+button:hover {
+    background-color: #28a745; /* Green on hover for all buttons */
+}
+
+#question-screen {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#question-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+#answer-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    justify-content: flex-start; /* Align buttons to the start of the container */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 2000px; /* Adjust as needed */
+}
+#answer-buttons button {
+    flex: 1 0 45%; /* Allow buttons to take up 45% of the available width */
+    margin: 5px; /* Add some space between buttons */
+    margin-right: 0; /* Remove right margin */
+}
+.skip-button {
+    background-color: #FF5733;
+}
+
+.skip-button:hover {
+    background-color: #28a745;
+}
+#credit {
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    text-align: left; /* Align text to the left */
+    color: #e0e0e0; /* Match the text color */
+}
+
+#credit a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    color: #007ACC; /* Link color */
+    margin-right: 15px; /* Add space between links */
+}
+
+#credit a:last-child {
+    margin-right: 0; /* Remove margin from the last link */
+}
+
+#credit a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.description {
+    font-size: 1.5em; /* Adjust the size as needed */
+}
+#start-button {
+    font-size: 3em; /* Keep the font size as is */
+    padding: 45px 90px; /* Adjust vertical padding to be 3 times the horizontal */
+    width: auto; /* Allow button to shrink to content */
+    min-width: 120px; /* Ensure a minimum width */
+    text-align: center; /* Center the text */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+#main-title {
+    font-size: 10em; /* Keep the font size as is */
+    margin-top: 50px; /* Keep the margin to position it lower */
+    text-align: center; /* Center the text */
+    font-weight: 300; /* Set the font weight to a thinner value */
+    position: relative; /* Position relative for the trademark */
+}
+#main-title a {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Keep the link color consistent */
+}
+#main-title .trademark-circle.custom-trademark {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 0.8em !important;
+    height: 0.8em !important;
+    border: 5px solid white !important;
+    background-color: transparent !important;
+    border-radius: 50% !important;
+    font-size: 0.3em !important;
+    margin-left: -1em !important;
+    vertical-align: super !important;
+    position: relative !important;
+    top: -0.7em !important;
+}
+#main-title .trademark-circle.custom-trademark::after {
+    content: "R" !important;
+    font-size: 0.7em !important;
+    line-height: 1 !important;
+    color: white !important;
+}
+.description {
+    font-size: 1.5em; /* Keep the description size as needed */
+    margin-top: 20px; /* Add some space above the description */
+    text-align: left; /* Align the text to the left */
+    max-width: 100%; /* Make the description take the full width */
+    width: 100%; /* Ensure it spans the full width of the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+#contributors-link {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#contributors-link a {
+    color: #007ACC;
+    text-decoration: none;
+}
+
+#contributors-link a:hover {
+    text-decoration: underline;
+}
+#contributors-page h1,
+#contributors-page h2 {
+    text-align: center; /* Center the headings */
+}
+
+#contributors-page ul {
+    list-style-type: disc; /* Use bullet points */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center the text in the lists */
+}
+
+#contributors-page li {
+    margin-bottom: 10px; /* Space between list items */
+    display: block; /* Each list item on a new line */
+}
+#runner-selection-screen {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#runner-selection-screen label {
+    display: inline-block;
+    margin: 10px;
+}
+
+#runner-selection-screen button {
+    margin-top: 20px;
+}
+#content-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#answers-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .answer-div {
+    display: flex;
+    width: 100%;
+  }
+  
+  .answer-div button {
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center;
+  }
+#button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1e1e1e; /* Dark background for the button area */
+    border-top: 1px solid #444; /* Subtle separator line */
+}
+
+#button-container button {
+    padding: 10px 20px; /* Adjust padding for a balanced look */
+    font-size: 16px; /* Slightly larger font size */
+    border: none; /* Remove border */
+    background-color: #007ACC; /* Primary button color */
+    color: #ffffff; /* Text color */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+#button-container button:hover {
+    background-color: #005f99; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+#button-container button:active {
+    transform: translateY(0); /* Reset lift effect on click */
+}
+#question-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#logo-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px; /* Increased margin to move it down */
+    margin-top: 30px; /* Added top margin for additional spacing */
+}
+
+#question-logo {
+    font-size: 9em; /* Increased from 3em to 9em (3x as big) */
+    font-weight: 300;
+    margin: 1;
+    line-height: 1; /* Ensure proper line height for larger text */
+}
+
+#question-logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#question-logo .trademark-circle.custom-trademark {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 0.8em !important;
+    height: 0.8em !important;
+    border: 5px solid white !important;
+    background-color: transparent !important;
+    border-radius: 50% !important;
+    font-size: 0.3em !important;
+    margin-left: -1em !important;
+    vertical-align: super !important;
+    position: relative !important;
+    top: -0.7em !important;
+}
+
+#question-logo .trademark-circle.custom-trademark::after {
+    content: "R" !important;#answer-buttons {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 600px; /* Adjust as needed */
+    }
+    
+    #answer-buttons button {
+        flex: 1 0 45%; /* Allow buttons to take up 45% of the available width */
+        margin: 5px; /* Add some space between buttons */
+    }
+    font-size: 0.7em !important;
+    line-height: 1 !important;
+    color: white !important;
+}
+#question-text {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+#results-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.results-header {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.answers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.answer-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.question-number {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007ACC;
+    margin-bottom: 10px;
+}
+
+.question-text {
+    font-size: 1.1em;
+    color: #e0e0e0;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.answer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.answer-symbol {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.important-checkbox {
+    margin-right: 10px;
+}
+
+.important-label {
+    font-size: 0.9em;
+    color: #a0a0a0;
+}
+
+.answer-symbol.agree { color: #28a745; }
+.answer-symbol.neutral { color: #ffc107; }
+.answer-symbol.disagree { color: #dc3545; }
+.answer-symbol.skipped { color: #6c757d; }
+
+.finish-button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #007ACC;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.finish-button:hover {
+    background-color: #005f99;
+}
+.back-button {
+    background-color: #6c757d; /* A neutral gray color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px; /* Add some space below the back button */
+}
+
+.back-button:hover {
+    background-color: #28a745; /* Green on hover */
+}

@@ -1,0 +1,34 @@
+#contributors-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#contributors-page h1 {
+    text-align: center;
+}
+
+#contributors-page h2 {
+    margin-top: 30px;
+}
+
+#contributors-page ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contributors-page li {
+    margin-bottom: 10px;
+}
+
+#contributors-page a {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    color: #007ACC;
+    text-decoration: none;
+}
+
+#contributors-page a:hover {
+    text-decoration: underline;
+}
